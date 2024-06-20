@@ -4,6 +4,8 @@
 
 package com.mycompany.analisis_financiero;
 
+import ratios.MenuPricipal;
+
 /**
  *
  * @author User
@@ -11,6 +13,10 @@ package com.mycompany.analisis_financiero;
 public class Analisis_financiero {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        javax.swing.SwingUtilities.invokeLater(()-> {
+          MenuPricipal menu = new MenuPricipal();
+          menu.setVisible(true);
+        });
     }
 }
